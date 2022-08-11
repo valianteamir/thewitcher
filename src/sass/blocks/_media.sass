@@ -1,0 +1,72 @@
+@media (max-width: 760px)
+	.play
+		display: none
+	.footer__wrap
+		align-items: flex-start
+		flex-direction: column
+	.copyright
+		display: inline-block
+		margin-bottom: 8px
+@media (max-width: 540px)
+	.menu-button
+		position: absolute
+		display: block
+		top: 40px
+		right: 35px
+		display: block
+		width: 30px
+		height: 2px
+		background-color: #fff
+	.menu-button:before
+		content: ''
+		margin-top: -7px
+		display: block
+		width: 30px
+		height: 2px
+		background-color: #fff
+		transition: transform 0.5s
+	.menu-button:after
+		content: ''
+		margin-top: 12px
+		display: block
+		width: 30px
+		height: 2px
+		background-color: #fff
+		transition: transform 0.5s
+	.header
+		display: none
+		position: absolute
+		top: 0
+		right: 0
+		padding: 40px 0
+		width: 100%
+		background-color: $primary
+		&-social
+			margin-bottom: 25px
+			order: -1
+		&__row
+			flex-direction: column
+		&-nav
+			flex-direction: column
+			align-items: center
+			&__logo
+				order: -2
+				margin-bottom: 25px
+			&__link:not(:last-child)
+				margin-right: 0
+				margin-bottom: 17px
+	.menu-button_active
+		height: 0
+		&::before
+			transform: rotate(45deg)
+			margin-top: 0
+		&::after
+			transform: rotate(-45deg)
+			margin-top: 0
+	.header_active
+		display: flex
+	.main
+		padding-top: 196px
+		transition: transform 0.3s
+	.main__title
+		font-size: 56px

@@ -1,0 +1,26 @@
+.header
+	padding-top: 60px
+	padding-bottom: 90px
+	&__row
+		display: flex
+		justify-content: space-between
+		align-items: center
+	&-nav
+		display: flex
+		align-items: center
+		&__link:not(:last-child)
+			margin-right: 24px
+		&__link::after
+			content: ''
+			display: block
+			width: 0
+			height: 1px
+			background-color: #fff
+			transition: width 0.3s
+		&__link:hover::after
+			width: 100%
+	&-social
+		&__link:not(:last-child)
+			margin-right: 21px
+.menu-button
+	display: none

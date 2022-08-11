@@ -1,0 +1,40 @@
+.series
+	position: relative
+	max-width: 425px
+	display: flex
+	&__card
+		display: flex
+		padding: 13px
+		flex-direction: column
+		justify-content: flex-end
+		width: 164px
+		height: 113px
+		background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url('/src/img/series/card-image-1.jpg')
+		border-radius: 8px
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: center center
+		&_second
+			background: linear-gradient(180deg, rgba(20, 18, 24, 0.5) 0%, #2D2D2D 100%), url('/src/img/series/card-image-2.jpg')
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: center center
+	&__subtitle
+		font-size: 12px
+		margin-bottom: 2px
+	&__title
+		font-weight: bold
+.arrow
+	width: 32px
+	height: 23px
+	background-image: url('/src/img/series/arrow.svg')
+	background-repeat: no-repeat
+	background-position: center
+	background-color: transparent
+	top: 65px
+.slider
+	max-width: 390px
+	margin-left: 0
+	&__btn-next
+		&:after
+			content: none
